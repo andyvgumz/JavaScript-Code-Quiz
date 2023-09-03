@@ -11,3 +11,26 @@
 // THEN the game is over
 // WHEN the game is over
 // THEN I can save my initials and score 
+
+let questions = [
+    {
+        "title": "Common Data Types DO NOT include:",
+        "choices": ["string", "booleans", "alerts", "numbers"],
+        "answer":"alerts"
+    },
+    {
+        // "title": "The condition in an if / else statement is enclosed within _____.",
+        // "choices":["quotes","curly brackets","parentheses","square brackets"],
+        // "answer":"parentheses"
+
+        "title": "Conditionals keywords are:",
+        "choices": ["if", "for", "while", "for each"],
+        "answer": "if"
+    },
+    {
+        "title": "Corgis type include",
+        "choices": ["welsh", "brown", "green", "purple"],
+        "answer":"welsh"
+
+    }
+]

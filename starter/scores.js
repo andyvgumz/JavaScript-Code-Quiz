@@ -12,3 +12,34 @@
 // WHEN the game is over
 // THEN I can save my initials and score 
 
+function printHighScores(){
+//TO DO
+let highScores = JSON.parse(localStorage.getItem("highscores")) || [];
+
+highScores.sort(function(a, b){
+    return b.score - a.score;
+    })
+
+    highScores.forEach(function(score) {
+        let li = document.createElement("li");
+        li.textContent = `${score.initials} - ${score.score}`
+
+        let ol= document.getElementById("highscores");
+        ol.appendChild(li);
+    });
+}
+
+function clearHighScores(){
+//TO DO
+localStorage.removeItem("highscores");
+window.location.reload(); //refresh page to show new list of highscores after clearing them out
+}
+
+// document.getElementById("clear").onclick = clearHighScores;
+
+// Or
+
+let clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", clearHighScores);
+
+printHighScores(); //The highScores are coming from the localStorage
