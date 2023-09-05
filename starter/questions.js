@@ -1,5 +1,5 @@
 
-//**JavaScript for scores.js */
+//**JavaScript for questions.js */
 //GIVEN I am taking a code quiz
 // WHEN I click the start button
 // THEN a timer starts and I am presented with a question
@@ -16,21 +16,19 @@ let questions = [
     {
         "title": "Common Data Types DO NOT include:",
         "choices": ["string", "booleans", "alerts", "numbers"],
-        "answer":"alerts"
+        "answer": "alerts" //Question title, choices and answer
     },
-    {
-        // "title": "The condition in an if / else statement is enclosed within _____.",
-        // "choices":["quotes","curly brackets","parentheses","square brackets"],
-        // "answer":"parentheses"
 
+    {
         "title": "Conditionals keywords are:",
         "choices": ["if", "for", "while", "for each"],
-        "answer": "if"
+        "answer": "if" //Question title, choices and answer
     },
+
     {
         "title": "Corgis type include",
         "choices": ["welsh", "brown", "green", "purple"],
-        "answer":"welsh"
+        "answer": "welsh" //Question title, choices and answer
 
     }
 ]

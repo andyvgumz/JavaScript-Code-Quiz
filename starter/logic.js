@@ -28,11 +28,11 @@ let initialElement = document.getElementById("initials");
 let feedBackELement = document.getElementById("feedback");
 
 
-let sfxRight = new Audio("assets/sfx/correct.wav");
+let sfxRight = new Audio("assets/sfx/correct.wav"); //This adds audio to the quiz
 
 
 function questionClick() {
-    //alert("question was clicked")
+    //alert("question was clicked") to check if function logs
     if (this.value !== questions[currentQuestionIndex].answer) {
         time -= 15;
 

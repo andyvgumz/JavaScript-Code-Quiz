@@ -13,7 +13,7 @@
 // THEN I can save my initials and score 
 
 function printHighScores(){
-//TO DO
+//function for printing scores
 let highScores = JSON.parse(localStorage.getItem("highscores")) || [];
 
 highScores.sort(function(a, b){
@@ -30,7 +30,7 @@ highScores.sort(function(a, b){
 }
 
 function clearHighScores(){
-//TO DO
+//Function to clear scores
 localStorage.removeItem("highscores");
 window.location.reload(); //refresh page to show new list of highscores after clearing them out
 }
